@@ -57,7 +57,7 @@ $(function () {
         // use $.post
         $("input").keyup(function(){
             var txt = $("input").val();
-        $.post("mongodb://localhost:27017/", {newproduct:txt},function(result){
+        $.post("url", {newproduct:txt},function(result){
         $("span").html(result);
     
         // ===============================
