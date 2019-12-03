@@ -20,6 +20,12 @@ function getProductById(req, res) {
     var pid = req.params.pid;    
     // #6 Get a product by ID
 
+    Product.find({"_id":id}, function (err, data) {   
+        if(err){
+            res.status(500).json({ status: "error", message: err});
+        }     
+        res.json(data);
+    });
     // ===============================
 }
 
