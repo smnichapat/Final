@@ -59,7 +59,7 @@ $(function () {
             var txt = $("input").val();
         $.post("url", {newproduct:txt},function(result){
         $("span").html(result);
-    
+        
         // ===============================
 
     });
