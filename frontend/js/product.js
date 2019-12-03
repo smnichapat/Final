@@ -57,10 +57,9 @@ $(function () {
         // use $.post
         $("input").keyup(function(){
             var txt = $("input").val();
-        $.post("demo_ajax_gethint.asp", {data:txt},function(result){
+        $.post("mongodb://localhost:27017/", {newproduct:txt},function(result){
         $("span").html(result);
-        }
-    })
+    
         // ===============================
 
     });
