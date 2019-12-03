@@ -23,7 +23,7 @@ $(function () {
                         <td>${user.price}</td>
                         <td>${user.photo}</td>
                         <td>
-                        <a class="btn btn-primary" href="userdetail.html?id=${user.id}">
+                        <a class="btn btn-primary" href="userdetail.html?id=${user.serialno}">
                              View Detail
                     </a>
                     </td>
@@ -59,6 +59,8 @@ $(function () {
             var txt = $("input").val();
         $.post("demo_ajax_gethint.asp", {data:txt},function(result){
         $("span").html(result);
+        }
+    })
         // ===============================
 
     });
