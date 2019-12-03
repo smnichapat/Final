@@ -10,7 +10,7 @@ $(function () {
     function getData() {
         // #14 Get a selected product and display as a form
         // use $.get
-
+     
         // ===============================
     }
 
